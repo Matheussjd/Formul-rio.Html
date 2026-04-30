@@ -1,0 +1,192 @@
+formulario.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário de Pré-Matrícula</title>
+
+<style>
+    body {
+        background: #dcdcdc;
+        font-family: "Times New Roman", serif;
+    }
+
+    .container {
+        width: 650px;
+        margin: 30px auto;
+        background: #f8f8f8;
+        border: 3px double #666;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 28px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 5px 0 15px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    fieldset {
+        border: 2px groove #999;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 8px;
+    }
+
+    td {
+        vertical-align: middle;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        border: 1px solid #666;
+        padding: 3px;
+        background: #fff;
+    }
+
+    .small {
+        width: 50px;
+    }
+
+    .ddd {
+        width: 40px;
+    }
+
+    .tel {
+        width: 120px;
+    }
+
+    select {
+        width: 150px;
+    }
+
+    .bottom {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 5px 12px;
+        border: 1px solid #666;
+        background: #e0e0e0;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #c0c0c0;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <table>
+                <tr>
+                    <td>Nome do Aluno:</td>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Nascimento (dd/mm/aaaa):</td>
+                    <td><input class="small" type="text"></td>
+                    <td><input class="small" type="text"></td>
+                    <td><input class="small" type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Nome da Mãe:</td>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Nome do Pai:</td>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Telefone:</td>
+                    <td><input class="ddd" type="text"></td>
+                    <td><input class="tel" type="text"></td>
+                    <td>E-mail: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>E-Mail:</td>
+                    <td colspan="3"><input type="email"></td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Matrícula:</legend>
+
+            <table>
+                <tr>
+                    <td>Série:</td>
+                    <td>
+                        <select>
+                            <option>pré-escolar</option>
+                            <option>1º ano</option>
+                            <option>2º ano</option>
+                        </select>
+                    </td>
+
+                    <td>Turno:</td>
+                    <td>
+                        <input type="radio" name="turno"> Manhã<br>
+                        <input type="radio" name="turno"> Tarde
+                    </td>
+
+                    <td>Atividades Extracurriculares:</td>
+                    <td>
+                        <input type="checkbox"> Informática<br>
+                        <input type="checkbox"> Música<br>
+                        <input type="checkbox"> Dança<br>
+                        <input type="checkbox"> Pintura<br>
+                        <input type="checkbox"> Natação<br>
+                        <input type="checkbox"> Futebol<br>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <div class="bottom">
+            <button type="submit">Enviar Formulário</button>
+            <button type="reset">Limpar Campos</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
